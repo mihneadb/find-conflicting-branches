@@ -1,0 +1,9 @@
+#!/usr/bin/env python2
+
+import fire
+
+from find_conflicting_branches.lib import find_conflicting_branches
+
+
+if __name__ == '__main__':
+    fire.Fire(find_conflicting_branches)

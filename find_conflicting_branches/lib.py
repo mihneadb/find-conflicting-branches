@@ -1,3 +1,5 @@
+#!/usr/bin/env python2
+
 import fire
 from git import Repo, Git
 
@@ -41,7 +43,3 @@ def find_conflicting_branches(repo_path, target_branch, my_branch):
     # Find the conflicting ones.
     conflicting_branches = [b for b in potential_branches if has_conflict(g, b, my_branch)]
     return conflicting_branches
-
-
-if __name__ == '__main__':
-    fire.Fire(find_conflicting_branches)
