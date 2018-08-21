@@ -1,6 +1,3 @@
-import sys
-import subprocess
-
 import fire
 from git import Repo, Git
 
